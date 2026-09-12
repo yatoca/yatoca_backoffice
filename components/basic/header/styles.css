@@ -1,0 +1,238 @@
+.header-points {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-body {
+    max-width: 1512px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.header-points div,
+.header-points a {
+    border-bottom: none;
+    padding-bottom: 5px;
+    height: 21px;
+    text-decoration: none;
+}
+
+.header-points[data-color="#000000"] div:not(:last-child):hover,
+.header-points[data-color="#000000"] a:not(:last-child):hover {
+    border-bottom: 1px solid #000000 !important;
+    font-weight: 700;
+}
+
+.header-points[data-color="#FFFFFF"] div:hover,
+.header-points[data-color="#FFFFFF"] a:hover {
+    border-bottom: 1px solid #FFFFFF !important;
+    font-weight: 700;
+}
+
+.header-points[data-color="#2E585B"] div:hover,
+.header-points[data-color="#2E585B"] a:hover {
+    border-bottom: 1px solid #2E585B !important;
+    font-weight: 700;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 109px;
+    max-height: 109px;
+}
+
+.header-opened-header {
+    min-height: 109px;
+    max-height: 109px;
+}
+
+.burger-menu-opened {
+    position: absolute;
+    background-color: #000000;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: white;
+    overflow-y: scroll;
+    padding-bottom: 32px;
+}
+
+.open-menu-title {
+    font-size: 64px;
+    line-height: 59px;
+    margin-bottom: 30px;
+}
+
+.open-menu-title a {
+    text-decoration: none;
+}
+
+.open-menu-p {
+    font-size: 24px;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.open-menu-divider {
+    height: 4px;
+    background-color: #ffffff;
+}
+
+.open-menu-footer {}
+
+.header-menu-home,
+.header-menu-about-us,
+.header-menu-festivals,
+.header-menu-gallery,
+.header-menu-directory,
+.header-menu-talk,
+.header-menu-talk-questions,
+.header-menu-lima,
+.header-menu-cajamarca,
+.header-menu-arequipa {
+    width: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.header-menu-home,
+.header-menu-lima {
+    background-color: #EABF00;
+    color: #E53016;
+}
+
+.header-menu-about-us,
+.header-menu-cajamarca {
+    background-color: #D9B3D6;
+    color: #0059A6;
+}
+
+.header-menu-festivals {
+    background-color: #0059A6;
+    color: #D9B3D6;
+}
+
+.header-menu-directory {
+    background-color: #2E585B;
+    color: #5EC2D0;
+}
+
+.header-menu-gallery {
+    background-color: #5EC2D0;
+    color: #2E585B;
+}
+
+.header-menu-arequipa {
+    background-color: #5EC2D0;
+    color: #2E585B;
+}
+
+.header-menu-talk,
+.header-menu-talk-questions {
+    background-color: #E53016;
+    color: #EABF00;
+}
+
+.header-points .header-menu-home:hover,
+.header-points .header-menu-about-us:hover,
+.header-points .header-menu-festivals:hover,
+.header-points .header-menu-gallery:hover,
+.header-points .header-menu-directory:hover,
+.header-points .header-menu-talk:hover,
+.header-points .header-menu-talk-questions:hover,
+.header-points .header-menu-lima:hover,
+.header-points .header-menu-cajamarca:hover,
+.header-points .header-menu-arequipa:hover {
+    color: #ffffff;
+    border-bottom: none !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.header-points .header-menu-gallery:hover {
+    border: 0.5px solid #FFFFFF !important;
+    background-color: transparent;
+}
+
+
+@media (min-width: 0px) and (max-width: 375px) {
+    .header-body {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header-points {
+        display: none;
+    }
+}
+
+@media (min-width: 375px) {
+    .header-body {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header-points {
+        display: none;
+    }
+}
+
+@media (min-width: 600px) {
+    .header-body {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .header-points {
+        display: none;
+    }
+
+    .burger-menu-opened {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media (min-width: 768px) {
+    .header-body {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .header-points {
+        display: flex;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 1280px) {
+    .header-body {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .header-body {
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+}

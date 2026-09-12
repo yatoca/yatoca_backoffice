@@ -1,0 +1,25 @@
+/* Date pickers group */
+.hd-date-group {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 260px;
+}
+
+.hd-date-group label {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-size: clamp(12px, 1.2vw, 14px);
+    color: #333;
+}
+
+.hd-date-group input[type="date"] {
+    padding: 8px 10px;
+    /* bigger touch target */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: clamp(12px, 1.4vw, 14px);
+    min-width: 160px;
+}

@@ -1,0 +1,15 @@
+.wrapper {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    max-height: 100vh;
+    min-height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.wrapper-children {
+    width: 100%;
+}
+.wrapper::-webkit-scrollbar {
+    display: none;
+}

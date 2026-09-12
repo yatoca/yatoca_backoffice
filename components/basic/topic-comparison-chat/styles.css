@@ -1,0 +1,23 @@
+.topic-comparison-chat {
+    display: flex;
+    gap: 8px;
+    width: 60%;
+    border: 1px solid #BABABA;
+    border-radius: 20px;
+    padding: 8px;
+    position: fixed;
+    bottom: 32px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    margin: 0 auto;
+    height: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.topic-comparison-chat::placeholder {
+    color: #BABABA;
+}
+.topic-comparison-chat input {
+    width: 100%
+}

@@ -1,0 +1,251 @@
+.table-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.text {
+    color: black;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    padding: 12px 8px;
+    border-bottom: 1px solid #D9D9D9;
+    transition: background-color 0.2s ease;
+    gap: 16px;
+    border-radius: 6px;
+}
+
+.row:hover {
+    background-color: #f7f7f7;
+}
+
+.row.empty {
+    justify-content: center;
+    color: #777;
+}
+
+.table-header {
+    font-weight: 600;
+    color: #9a9a9a;
+    border-bottom: none;
+}
+
+.th {
+    background: transparent;
+    border: 0;
+    text-align: left;
+    padding: 4px 8px;
+    font: inherit;
+    color: inherit;
+}
+
+.th:focus-visible {
+    outline: 2px solid #000;
+    border-radius: 6px;
+}
+
+.th-sortable {
+    cursor: pointer;
+}
+
+.row.pointer {
+    cursor: pointer;
+}
+
+.col {
+    padding: 4px 8px;
+    flex-shrink: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.col.topic {
+    flex: 2;
+    min-width: 160px;
+}
+
+.col.percentage,
+.col.mentions {
+    flex: 1;
+    min-width: 120px;
+}
+
+.col.summary {
+    flex: 3;
+    min-width: 220px;
+}
+
+.col.text {
+    flex: 2;
+    width: 100%;
+}
+.col.keywords,
+.col.topics {
+    flex: 2;
+    width: 100%;
+}
+
+.badge {
+    background: #eee;
+    border-radius: 12px;
+    padding: 2px 8px;
+    margin: 2px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.topic-suggestion {
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.topic-suggestion .score {
+    color: #666;
+    font-size: 12px;
+}
+
+.col.action {
+    flex: 1;
+    text-align: right;
+    min-width: 110px;
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.action-text,
+.action-text:hover {
+    color: #000;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 4px 10px;
+}
+
+.action-text:hover {
+    background-color: #E8E8E8;
+}
+
+.fw700 {
+    font-weight: 700;
+}
+
+/* Percentage bar */
+.pct-wrap {
+    position: relative;
+    height: 8px;
+    background: #EEE;
+    border-radius: 999px;
+    overflow: hidden;
+    margin-right: 8px;
+}
+
+.pct-bar {
+    height: 100%;
+    border-radius: 999px;
+    background: #2E7D32;
+    /* neutral default; theme can override */
+    transform: translateZ(0);
+}
+
+.pct-label {
+    font-size: 13px;
+    color: #444;
+    margin-top: 6px;
+}
+
+/* Mobile helpers (hidden on desktop) */
+.mobile-meta {
+    display: none;
+    gap: 6px;
+    align-items: center;
+    margin-top: 6px;
+}
+
+.badge {
+    background: #f1f1f1;
+    border-radius: 999px;
+    padding: 2px 8px;
+    font-size: 12px;
+}
+
+.dot {
+    color: #a0a0a0;
+    margin: 0 4px;
+}
+
+.muted {
+    color: #777;
+    font-size: 12px;
+}
+
+.mobile-summary {
+    display: none;
+    margin-top: 8px;
+    color: #444;
+}
+
+/* Compact mode */
+.tt-compact .row {
+    padding: 8px 6px;
+}
+
+.tt-compact .col {
+    padding: 2px 6px;
+}
+
+/* Responsive: turn rows into stacked cards */
+@media (max-width: 860px) {
+    .table-header {
+        display: none;
+    }
+
+    .row {
+        display: block;
+        padding: 12px;
+        border: 1px solid #E5E5E5;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+
+    .col {
+        display: block;
+        padding: 2px 0;
+        white-space: normal;
+    }
+
+    .col.topic {
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    .mobile-meta {
+        display: inline-flex;
+    }
+
+    .col.percentage,
+    .col.mentions,
+    .col.summary,
+    .col.action {
+        margin-top: 8px;
+    }
+
+    .col.action {
+        text-align: left;
+    }
+
+    .pct-wrap {
+        margin-top: 6px;
+    }
+
+    .mobile-summary {
+        display: block;
+    }
+}

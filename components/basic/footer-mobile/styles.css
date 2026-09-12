@@ -1,0 +1,71 @@
+.footer-mobile {
+    padding-top: 145px;
+    padding-bottom: 140px;
+}
+
+.footer-body-mobile {
+    max-width: 1512px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-p-mobile {
+    font-size: 24px;
+    line-height: auto;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.footer-networks-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-networks-item-mobile {
+    cursor: pointer;
+    padding-bottom: 2px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 4px;
+}
+
+.logos-grid-mobile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Mobile: 2 columns */
+    gap: 16px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 82px;
+}
+
+.logo-img {
+    max-width: 100px;
+    height: auto;
+}
+
+.logo-img-resurgir {
+    width: 65px;
+}
+
+.logo-img-rpp {
+    width: 57px;
+}
+
+.logo-img-openmind {
+    height: 52px;
+}
+
+@media (min-width: 1000px) {
+    .footer-mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 1000px) {
+    .logos-grid-mobile {
+        display: none;
+    }
+}

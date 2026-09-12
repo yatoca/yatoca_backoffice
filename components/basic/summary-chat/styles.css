@@ -1,0 +1,38 @@
+.summary-chat {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 60%;
+    border: 1px solid #BABABA;
+    border-radius: 20px;
+    padding: 8px;
+    position: fixed;
+    bottom: 32px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    margin: 0 auto;
+    height: 100px;
+    padding-left: 16px;
+    padding-right: 16px;
+    justify-content: space-around;
+}
+.summary-chat::placeholder {
+    color: #BABABA;
+}
+.summary-chat input {
+    width: 100%
+}
+.compare-btn-summary {
+    border-radius: 20px;
+    border: 1px solid #BABABA;
+    background-color: #F5F5F5;
+    color: #000;
+    min-width: 128px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+}
