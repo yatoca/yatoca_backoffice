@@ -1,0 +1,59 @@
+.admin-topic-form__header {
+    margin-bottom: 20px;
+}
+.admin-topic-form__header-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+.admin-topic-form__body {
+    margin-bottom: 20px;
+}
+.admin-topic-form__body__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.admin-topic-form__body__form__field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.admin-topic-form__body__form__field label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #616161;
+}
+.admin-topic-form__body__form__field input,
+.admin-topic-form__body__form__field textarea {
+    padding: 10px;
+    border: 1px solid #D6D6D6;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #616161;
+    resize: vertical;
+}
+.admin-topic-form__footer {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+.admin-topic-form__footer__button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.admin-topic-form__footer__button:hover {
+    background-color: #000000c1;
+}
+.admin-topic-form__body__form__field__keywords__keyword {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.admin-topic-form__body__form__field__keywords__keyword input {
+    flex: 1;
+}
